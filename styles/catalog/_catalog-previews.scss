@@ -1,0 +1,20 @@
+.home-catalog-preview {
+  margin-bottom: 40px;
+
+  @include media-breakpoint-up('lg') {
+    margin-bottom: 80px;
+  }
+
+  .home-catalog-title {
+    border-top: 2px solid $brand-secondary;
+    margin-top: 27px;
+    text-align: center;
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 25px;
+      padding-top: 20px;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.footer-connect {
+  text-align: center;
+
+  @include media-breakpoint-up('lg') {
+    text-align: left;
+  }
+
+  .footer-newsletter {
+    display: block;
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 25px;
+      padding-top: 25px;
+    }
+
+    .email-label {
+      font-size: 15px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+
+      @include media-breakpoint-up('lg') {
+        font-family: inherit;
+        font-size: 22px;
+      }
+    }
+
+    .email-input {
+      display: block;
+      height: 35px;
+      width: 260px;
+      padding-left: 8px;
+      font-size: 12px;
+      margin: 10px auto 20px auto;
+      border: 1px solid $gray-secondary;
+
+      @include media-breakpoint-up('lg') {
+        margin-bottom: 10px;
+      }
+
+      &::placeholder {
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: $brand-primary;
+      }
+    }
+
+    .GDPR-terms {
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      margin: 10px 0 20px 0;
+      position: relative;
+      padding: 0 41px;
+
+      input {
+        position: absolute;
+        top: 2px;
+      }
+
+      label {
+        text-align: center;
+      }
+
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-social {
+    text-align: center;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      font-size: 24px;
+
+      @include media-breakpoint-up('lg') {
+        font-size: 20px;
+        justify-content: flex-start;
+        gap: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import 'footer-connect';
+@import 'footer-contact';
+@import 'footer-nav';
+
+.footer {
+  background: $brand-secondary;
+  padding-top: 40px;
+
+  .container {
+    padding: 0;
+
+    @include media-breakpoint-down('lg') {
+      max-width: 100%;
+    }
+
+    @include media-breakpoint-up('lg') {
+      padding: 0 16px;
+    }
+  }
+
+  @include media-breakpoint-up('lg') {
+    &-inner {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+}
