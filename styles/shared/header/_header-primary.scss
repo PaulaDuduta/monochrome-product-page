@@ -74,5 +74,9 @@
     align-items: center;
     text-transform: uppercase;
     padding: 0;
+
+    @include media-breakpoint-up('lg') {
+      padding: 0 16px;
+    }
   }
 }

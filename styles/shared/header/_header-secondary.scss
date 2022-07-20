@@ -4,10 +4,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
     @include media-breakpoint-up('lg') {
       margin-top: 20px;
       margin-bottom: 50px;
+      padding: 0 16px;
     }
 
     .header-controls {

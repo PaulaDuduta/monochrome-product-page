@@ -15,7 +15,7 @@ export default function Home() {
 
       <Header></Header>
 
-      <main className="content">
+      <main className="content container">
         <ContentProduct></ContentProduct>
 
         <CatalogPreviews></CatalogPreviews>

@@ -1,7 +1,16 @@
 .content-product {
-  display: flex;
-  margin-top: 25px;
-  margin-bottom: 35px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media-breakpoint-up('lg') {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    flex-direction: row;
+    align-items: unset;
+    justify-content: unset;
+  }
 
   .product-images {
     display: flex;
@@ -18,8 +27,10 @@
   }
 
   .product-details {
-    margin-left: 140px;
-    width: 470px;
+    @include media-breakpoint-up('lg') {
+      margin-left: 140px;
+      width: 470px;
+    }
 
     header > h3 {
       font-size: 25px;
@@ -33,12 +44,119 @@
 
       h4 {
         font-size: 20px;
-        font-weight: 700px;
+        font-weight: bold;
         border-top: 2px solid $brand-secondary;
+        padding-top: 15px;
+        margin-bottom: 5px;
 
         &:last-child {
           border-bottom: 2px solid $brand-secondary;
+          margin-bottom: 0;
+          padding-bottom: 5px;
         }
+      }
+    }
+  }
+
+  .product-ctas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+
+    .button {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+      width: 160px;
+      height: 45px;
+    }
+
+    .cart-btn {
+      display: flex;
+      align-items: center;
+
+      button {
+        background: $brand-primary;
+        color: $white;
+      }
+
+      i {
+        width: 45px;
+        height: 45px;
+        border: 1px solid $brand-secondary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $gray-primary;
+      }
+    }
+
+    .whishlist-btn {
+      display: flex;
+      align-items: center;
+
+      button {
+        border-color: $brand-secondary;
+      }
+
+      i {
+        width: 45px;
+        height: 45px;
+        border: 1px solid $brand-secondary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $brand-secondary;
+      }
+    }
+  }
+
+  .product-connect {
+    header {
+      text-decoration: underline;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .product-social-contact {
+      border-top: 1px solid $brand-secondary;
+      border-bottom: 1px solid $brand-secondary;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        font-size: 22px;
+      }
+    }
+  }
+
+  .product-customer-service {
+    ul {
+      display: flex;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      text-align: center;
+
+      li > a > span {
+        text-transform: capitalize;
+      }
+
+      li:nth-child(2) {
+        border-left: 1px solid $brand-secondary;
+        border-right: 1px solid $brand-secondary;
+      }
+
+      li {
+        padding: 10px 20px;
       }
     }
   }

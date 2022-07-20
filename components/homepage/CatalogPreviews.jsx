@@ -6,7 +6,7 @@ import ProductTile4 from '../catalog/ProductTile4';
 export default function CatalogPreviews() {
   return (
     <>
-      <section className="home-catalog-preview container">
+      <section className="home-catalog-preview">
         <header className="home-catalog-title">
           <h2>You may also like</h2>
         </header>
@@ -28,7 +28,7 @@ export default function CatalogPreviews() {
         </section>
       </section>
 
-      <section className="home-catalog-preview container">
+      <section className="home-catalog-preview">
         <header className="home-catalog-title">
           <h2>Recently view</h2>
         </header>

@@ -1,7 +1,7 @@
 export default function HeaderSecondary() {
   return (
     <section className="header-secondary">
-      <div className="header-secondary-inner container py-3 p-lg-0">
+      <div className="header-secondary-inner container">
         <section className="header-connect d-none d-lg-flex">
           <ul>
             <li>
