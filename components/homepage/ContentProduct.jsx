@@ -47,13 +47,13 @@ export default function ContentProduct() {
 
         <div className="product-ctas">
           <div className="cart-btn">
-            <i class="fa-solid fa-bag-shopping"></i>
+            <i className="fa-solid fa-bag-shopping"></i>
             <button type="button" className="button" title="Add to bag">
               Add to bag
             </button>
           </div>
           <div className="whishlist-btn">
-            <i class="fa-regular fa-heart"></i>
+            <i className="fa-regular fa-heart"></i>
             <button type="button" className="button" title="Whishlist">
               Whishlist
             </button>
@@ -76,7 +76,7 @@ export default function ContentProduct() {
                   rel="noopener noreferrer"
                   title="Contact us"
                 >
-                  <i class="fa-regular fa-envelope"></i>
+                  <i className="fa-regular fa-envelope"></i>
                 </a>
               </li>
 
@@ -120,7 +120,7 @@ export default function ContentProduct() {
                   rel="noopener noreferrer"
                   title="Contact us"
                 >
-                  <i class="fa-brands fa-pinterest"></i>
+                  <i className="fa-brands fa-pinterest"></i>
                 </a>
               </li>
             </ul>
